@@ -37,9 +37,3 @@ public class TestBase extends AbstractTestNGCucumberTests{
 	}
 
 }
-
-// sdjhfgdsjhfg
-// skdhfgdsfv 
-// abdallah 
-
-// abdallah awith ngm again 
