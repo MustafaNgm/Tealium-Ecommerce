@@ -38,7 +38,6 @@ public class UserRegistration extends TestBase{
 	@Test
 	@When("user fills the fields {string} , {string} , {string} , {string} , {string}")
 	public void user_fills_the_fields(String firstname, String middlename, String lastname, String email, String password) throws InterruptedException {
-		// Write code here that turns the phrase above into concrete actions
 
 		RegisterObject = new RegisterPage(driver);
 
@@ -62,7 +61,7 @@ public class UserRegistration extends TestBase{
 	}
 
 	@Test
-	@Then("the registration process was completed successfully")
+	@Then("the registration process was completed successfully , open register page again to register again with another data")
 	public void the_registration_process_was_completed_successfully() throws InterruptedException {
 
 		HomeObject = new HomePage(driver);
