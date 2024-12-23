@@ -34,7 +34,7 @@ public class JsonDataReader {
             String email = (String) person.get("email");
             String password = (String) person.get("password");
 
-            // إضافة البيانات إلى القائمة
+      
             data.add(new Object[]{firstname, middlename, lastname, email, password});
         }
 
