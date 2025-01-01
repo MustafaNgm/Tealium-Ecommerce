@@ -2,6 +2,7 @@ package tests;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,11 +10,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import data.JsonDataReader;
 import pages.HomePage;
 import pages.MyAccountPape;
 import pages.RegisterPage;
-import java.util.List;
 
 public class TestUserRegister2 extends TestBase{
 
