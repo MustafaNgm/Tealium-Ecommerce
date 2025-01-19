@@ -1,0 +1,4 @@
+# Created at 2025-01-19T11:53:12.041
+
+tests.TestUserRegister.Register() is depending on method public void tests.TestUserRegister.OpenRegisterPage() throws java.lang.InterruptedException, which is not annotated with @Test or not included.
+
