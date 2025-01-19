@@ -20,7 +20,6 @@ public class TestLogin extends TestBase{
 	@Test (priority = 1 )
 	public void OpenLoginPage () {
 		HomeObject = new HomePage(driver);
-		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(HomeObject.AccountListElement));
 		HomeObject.OpenAccountList();
@@ -28,7 +27,8 @@ public class TestLogin extends TestBase{
 		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait1.until(ExpectedConditions.visibilityOf(HomeObject.LoginLinkElement));
 		HomeObject.OpenLoginPage();
-		
+		 
+		// dskdkjdsbc ds
 		
 	}
 	@Test (priority = 2 , dependsOnMethods = {"OpenLoginPage"} , dataProvider = "userdata")
