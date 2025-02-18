@@ -27,9 +27,6 @@ public class TestLogin extends TestBase{
 		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait1.until(ExpectedConditions.visibilityOf(HomeObject.LoginLinkElement));
 		HomeObject.OpenLoginPage();
-		 
-		// dskdkjdsbc ds
-		
 	}
 	@Test (priority = 2 , dependsOnMethods = {"OpenLoginPage"} , dataProvider = "userdata")
 	public void Login() throws IOException, ParseException  {
@@ -39,6 +36,6 @@ public class TestLogin extends TestBase{
 		LoginPageObject = new LoginPage(driver);
 		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait1.until(ExpectedConditions.visibilityOf(LoginPageObject.LoginBtn));
-		LoginPageObject.Login(Jsonreader.email, Jsonreader.password);
+		LoginPageObject.Login(Jsonreader.email,Jsonreader.password);
 	}
 }

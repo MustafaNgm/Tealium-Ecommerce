@@ -14,7 +14,7 @@ public class TestBase extends AbstractTestNGCucumberTests{
 
 	@BeforeClass
 	@Parameters ({"browser"})
-	public void startDriver (@Optional ("chrome") String browser) {
+	public void startDriver (@Optional ("firefox") String browser) {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
@@ -26,20 +26,19 @@ public class TestBase extends AbstractTestNGCucumberTests{
 			driver = new InternetExplorerDriver ();		
 		}
 		{
-			driver.manage().window().maximize();
+
 			driver.navigate().to("https://ecommerce.tealiumdemo.com");
+			driver.manage().window().maximize();
 		}
 	}
 
 	@AfterClass
-	public void stopDriver () {
-		driver.quit();
+	public static void stopDriver() {
+		if (driver != null) {
+
+			driver.quit();
+
+			System.out.println("Driver has been successfully closed.");
+		}
 	}
-
 }
-
-// sdjhfgdsjhfg
-// skdhfgdsfv 
-// abdallah 
-
-// abdallah awith ngm again 

@@ -12,7 +12,8 @@ import org.testng.annotations.Test;
 
 public class HyperLinks extends TestBase{
 
-    @Test
+    @org.junit.Test
+	@Test
 	public void testBrokenLinks() 
 	{
 		java.util.List<WebElement> links = driver.findElements(By.tagName("a")); 

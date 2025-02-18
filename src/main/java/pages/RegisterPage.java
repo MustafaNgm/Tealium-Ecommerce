@@ -38,18 +38,18 @@ public class RegisterPage extends PageBase{
 	WebElement RegisterButtonElement ;
 	
 	@FindBy (css = "a.back-link")
-	WebElement backbtn ;
+	WebElement backBtn ;
 	
-	public void RegisterWithValidData(String firstName , String MiddleName , String LastName , String Email , String Password ,String ConfirmPassword) {
-			
-		setText(FirstNameElement, firstName);
+	public void RegisterWithValidData(String FirstName , String MiddleName , String LastName , String Email , String Password ,String ConfirmPassword) {
+
+		setText(FirstNameElement, FirstName);
 		setText(MiddleNameElement, MiddleName);
 		setText(LastNameElement, LastName);
 		setText(EmailElement, Email);
 		setText(PasswordElement, Password);
 		setText(ConfirmationElement, ConfirmPassword);
 		clickbtn(NewsLetterElement);
-//		clickbtn(RememberMeElement);
+		//clickBtn(RememberMeElement);
 		clickbtn(RegisterButtonElement);
 		
 	}
